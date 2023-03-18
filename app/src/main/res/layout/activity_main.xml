@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/edtSayi1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="1. Sayı"
+        android:layout_marginTop="80dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/edtSayi2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="2. Sayı"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/txtSonuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+
+            >
+
+        <Button
+            android:id="@+id/btnTopla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009688"
+            android:text="+"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+
+            />
+        <Button
+            android:id="@+id/btnCikar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009688"
+            android:text="-"
+            android:textSize="25dp"
+            android:layout_marginLeft="5dp"
+            />
+        <Button
+            android:id="@+id/btnCarp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009688"
+            android:text="x"
+            android:textAllCaps="false"
+            android:textSize="25dp"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:id="@+id/btnBol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009688"
+            android:text="/"
+            android:textSize="25dp"
+            android:layout_marginLeft="5dp"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTemizle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temizle"
+        android:textSize="25dp"
+        android:backgroundTint="#009688"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:visibility="invisible"
+        />
+
+
+
+
+</LinearLayout>
